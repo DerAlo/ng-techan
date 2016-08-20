@@ -3,9 +3,6 @@
         'ng.techan.ohlc'
     ]);
 
-
-
-
     angular.module('ng.techan.ohlc', [])
 
     .directive('techanOhlc', function() {
@@ -237,10 +234,10 @@
                 svg = svg.append("g")
                     .attr("transform", "translate(" + dim.margin.left + "," + dim.margin.top + ")");
 
-                // svg.append('text')
-                //         .attr("class", "symbol")
-                //         .attr("x", 20)
-                //         .text("Facebook, Inc. (FB)");
+                svg.append('text')
+                        .attr("class", "symbol")
+                        .attr("x", 20)
+                        .text("Chaintrader Technologies. (CHAIN)");
 
                 svg.append("g")
                     .attr("class", "x axis")
